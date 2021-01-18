@@ -119,6 +119,10 @@ namespace Sanford.Multimedia.Midi
             {
                 return message;
             }
+            set
+            {
+              message = value;
+            }
         }
 
         internal MidiEvent Next
