@@ -232,6 +232,8 @@ namespace Sanford.Multimedia.Midi
         [Conditional("DEBUG")]
         private void AssertValid()
         {
+            return;
+
             if(trackCount > 1)
             {
                 Debug.Assert(Format == 1 || Format == 2);
