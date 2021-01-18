@@ -87,7 +87,7 @@ namespace Sanford.Multimedia.Midi
         /// <param name="message">
         /// The IMidiMessage to insert.
         /// </param>
-        public void Insert(int position, IMidiMessage message)
+        public MidiEvent Insert(int position, IMidiMessage message)
         {
             #region Require
 
@@ -149,6 +149,8 @@ namespace Sanford.Multimedia.Midi
             AssertValid();
 
             #endregion
+
+            return newMidiEvent;
         }
 
         /// <summary>
